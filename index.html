@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Pierret - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="sticky top-0 z-50 bg-white border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="img/logo_christophe_pierret.png"
+             class="h-10 w-auto" alt="Logo Dr Pierret">
+      </a>
+
+      <!-- Menu desktop -->
+      <div class="hidden md:flex space-x-8 items-center">
+
+        <!-- ACCUEIL -->
+        <a href="index.html" class="text-gray-700 hover:text-gray-500 ">Accueil</a>
+
+        <!-- LE CABINET -->
+        <details class="relative">
+          <summary class="cursor-pointer list-none text-gray-700 hover:text-gray-500 ">
+            Le Cabinet
+          </summary>
+
+          <div class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md">
+            <a href="equipe.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600">L’équipe</a>
+            <a href="dr-pierret.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600">Dr Christophe Pierret</a>
+            <a href="contact.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600">Plan d’accès & Informations</a>
+          </div>
+        </details>
+
+        <!-- TRAITEMENTS DENTAIRES -->
+        <details class="relative">
+          <summary class="cursor-pointer list-none text-gray-700 hover:text-gray-500 ">
+            Traitements dentaires
+          </summary>
+
+          <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md p-2 space-y-1">
+
+            <!-- IMPLANTOLOGIE (sous-menu) -->
+            <details class="relative">
+              <summary class="cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-gray-600 rounded">
+                Implantologie
+              </summary>
+
+              <div class="absolute top-0 left-full ml-1 w-64 bg-white shadow-lg rounded-md">
+                <a href="implant-1dent.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600">Remplacer une dent</a>
+                <a href="implant-plusieurs.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600">Remplacer plusieurs dents</a>
+                <a href="implant-toutes.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600">Remplacer toutes les dents</a>
+                <a href="implant-faq.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600">Questions fréquentes</a>
+                <a href="implant-conseils.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600">Conseils & précautions</a>
+              </div>
+            </details>
+
+            <a href="esthetique.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600 rounded">Esthétique dentaire</a>
+            <a href="orthodontie.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600 rounded">Orthodontie invisible</a>
+            <a href="facette.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600 rounded">Facette dentaire</a>
+            <a href="facette-pelliculaire.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600 rounded">Facette pelliculaire</a>
+            <a href="parodontologie.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-600 rounded">Parodontologie & Hygiène</a>
+
+          </div>
+        </details>
+
+        <!-- CONTACT -->
+        <a href="contact.html" class="text-gray-700 hover:text-gray-500 ">Contact</a>
+      </div>
+
+      <!-- Bouton mobile -->
+      <div class="md:hidden">
+        <button id="mobile-btn" class="text-gray-700 focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+
+    <a href="index.html" class="block  text-gray-700">Accueil</a>
+
+    <details class="bg-gray-50 rounded-md p-2">
+      <summary class="cursor-pointer  text-gray-700">Le Cabinet</summary>
+      <div class="pl-4 mt-2 space-y-1">
+        <a href="equipe.html" class="block py-1 text-gray-600">L’équipe</a>
+        <a href="dr-pierret.html" class="block py-1 text-gray-600">Dr Christophe Pierret</a>
+        <a href="contact.html" class="block py-1 text-gray-600">Plan d’accès & Informations</a>
+      </div>
+    </details>
+
+    <details class="bg-gray-50 rounded-md p-2">
+      <summary class="cursor-pointer  text-gray-700">Traitements dentaires</summary>
+
+      <div class="pl-4 mt-2 space-y-2">
+
+        <details>
+          <summary class="cursor-pointer text-gray-700">Implantologie</summary>
+          <div class="pl-4 mt-1 space-y-1">
+            <a href="implant-1dent.html" class="block py-1 text-gray-600">Remplacer une dent</a>
+            <a href="implant-plusieurs.html" class="block py-1 text-gray-600">Remplacer plusieurs dents</a>
+            <a href="implant-toutes.html" class="block py-1 text-gray-600">Remplacer toutes les dents</a>
+            <a href="implant-faq.html" class="block py-1 text-gray-600">Questions fréquentes</a>
+            <a href="implant-conseils.html" class="block py-1 text-gray-600">Conseils & précautions</a>
+          </div>
+        </details>
+
+        <a href="esthetique.html" class="block text-gray-700">Esthétique dentaire</a>
+        <a href="orthodontie.html" class="block text-gray-700">Orthodontie invisible</a>
+        <a href="facette.html" class="block text-gray-700">Facette dentaire</a>
+        <a href="facette-pelliculaire.html" class="block text-gray-700">Facette pelliculaire</a>
+        <a href="parodontologie.html" class="block text-gray-700">Parodontologie & Hygiène</a>
+
+      </div>
+    </details>
+
+    <a href="contact.html" class="block  text-gray-700">Contact</a>
+  </div>
+</nav>
+<div class="max-w-4xl mx-auto px-4 my-10 flex flex-col gap-6">
+    <h1 class="text-2xl">Votre Sourire est notre plus belle récompense </h1>
+    <img src="img/home.jpg" alt="">
+    <h2 class="text-xl">Bienvenue sur notre Site Internet</h2>
+    <div class="border-l-3 border-l-cyan-900 p-4 ml-5"><p>
+    Vous trouverez sur notre Site, la présentation du cabinet dentaire, l’équipe du cabinet, le plan d’accès, les horaires et jours de consultations, les traitements, soins, prophylaxie, implants dentaires, esthétique dentaire et bien d’autres informations.
+     <br><span class="font-bold">Nous vous souhaitons une agréable visite..</span>
+</p>
+</div>
+<div>
+    <a href="https://www.doctolib.fr/dentiste/wasquehal/christophe-pierret"
+class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-700 font-semibold rounded-lg mt-5
+        hover:bg-cyan-900 text-white">
+Prendre rendez-vous en ligne
+<span class="text-lg">→</span>
+</a>
+</div>
+
+</div>
+<footer class="bg-gray-700 text-white py-12 mt-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- COLONNE 1 : Coordonnées -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Coordonnées</h3>
+
+      <p class="mb-2">Dr Christophe Pierret</p>
+
+      <p class="mb-2">📍 4 Rue Sadi Carnot<br>59290 Wasquehal</p>
+
+      <p class="mb-2">📞 <a href="tel:0320725136" class="hover:text-gray-500">03 20 72 51 36</a></p>
+      <div>
+    <a href="https://www.doctolib.fr/dentiste/wasquehal/christophe-pierret"
+class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-700 font-semibold rounded-lg mt-5
+        hover:bg-cyan-900 text-white">
+Prendre rendez-vous en ligne
+<span class="text-lg">→</span>
+</a>
+</div>
+    </div>
+
+    <!-- COLONNE 2 : Horaires -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+
+      <ul class="space-y-1">
+        <li>Lundi : Fermé</li>
+        <li>Mardi : 9h – 18h 30</li>
+        <li>Mercredi : 9h – 12h 30</li>
+        <li>Jeudi : 9h – 12h 30, 14h - 19h</li>
+        <li>Vendredi : 9h – 13h</li>
+        <li>Samedi : Fermé</li>
+        <li>Dimanche : Fermé</li>
+      </ul>
+    </div>
+
+    <!-- COLONNE 3 : Plan & Informations -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Plan & Informations</h3>
+
+      <p class="mb-4">Retrouvez-nous facilement grâce à notre plan interactif :</p>
+
+      <div class="w-full h-48 rounded-lg overflow-hidden shadow">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18683.622753385986!2d3.1303502199883426!3d50.67341907502738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c329a2cde275af%3A0x7f839038a29e468!2sDr%20Pierret%20Christophe!5e0!3m2!1sfr!2sfr!4v1767797600368!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bas du footer -->
+  <div class="text-center text-gray-500 text-sm mt-10">
+    © Dr Christophe Pierret | Tous droits réservés
+  </div>
+</footer>
+<script>
+  const btn = document.getElementById("mobile-btn");
+  const menu = document.getElementById("mobile-menu");
+  btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+</script>
+
+</body>
+</html>
