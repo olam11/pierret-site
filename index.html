@@ -141,7 +141,24 @@ Dr Christophe Pierret, Chirurgien">
 </nav>
 <main>
 <div class="max-w-4xl mx-auto px-4 my-10 flex flex-col gap-6">
-    <img class="animate-fadeInDown" src="img/home.webp" alt="" width="800" height="301">
+    <!-- <img class="animate-fadeInDown" src="img/home.webp" alt="" width="800" height="301"> -->
+    <div class="mx-auto w-full max-w-[800px]">
+      <!-- conteneur responsive qui garde le ratio 800:308 -->
+      <div class="relative overflow-hidden w-full" style="aspect-ratio: 800 / 308;">
+        <img src="img/third_vautier.webp"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 img-natural animate-fade-1"
+            alt="Image 1" />
+        <img src="img/dentiste-paris-17.webp"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 img-natural animate-fade-2"
+            alt="Image 2" />
+        <img src="img/first_vautier.webp"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 img-natural animate-fade-3"
+            alt="Image 3" />
+      </div>
+    </div>
+
+
+
     <h1 class="text-2xl text-center">Votre Sourire est notre plus belle récompense !</h1>
     <h2 class="text-xl">Bienvenue sur notre Site Internet</h2>
     <div class="border-l-3 border-l-cyan-900 p-4 ml-5"><p>

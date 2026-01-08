@@ -13,6 +13,10 @@
     from { opacity: 0; transform: translateX(12px); }
     to { opacity: 1; transform: translateX(0); }
 }
+
+@keyframes fade1 { 0% { opacity: 1; } 30% { opacity: 1; } /* ~2.7s */ 33% { opacity: 0; } /* fade out */ 100% { opacity: 0; } } /* Image 2 : 3s → 6s visible */ @keyframes fade2 { 0% { opacity: 0; } 30% { opacity: 0; } 33% { opacity: 1; } /* apparaît après la 1 */ 63% { opacity: 1; } /* visible ~3s */ 66% { opacity: 0; } /* fade out */ 100% { opacity: 0; } } /* Image 3 : 6s → 9s visible */ @keyframes fade3 { 0% { opacity: 0; } 63% { opacity: 0; } 66% { opacity: 1; } /* apparaît après la 2 */ 96% { opacity: 1; } /* visible ~3s */ 100% { opacity: 0; } /* fade out avant de reboucler */ } .animate-fade-1 { animation: fade1 9s infinite linear; } .animate-fade-2 { animation: fade2 9s infinite linear; } .animate-fade-3 { animation: fade3 9s infinite linear; }.img-natural { width: auto; height: auto; max-width: 100%; max-height: 100%; display: block; }
+
+
 .animate-fadeInDown { animation: fadeInDown .7s ease both; }
 .animate-fadeInLeft { animation: fadeInLeft .7s ease both; }
 .animate-fadeInRight { animation: fadeInRight .7s ease both; }
